@@ -11,8 +11,21 @@ public:
     void setNama(string pNama);
     friend class siswa;
 };
-class siswa
-int main()
-{
-    std::cout << "Hello World!\n";
+
+class siswa {
+private:
+    int id;
+public:
+    void setId(int PId);
+    void displayAll(orang& a);
+};
+
+void siswa::displayAll(orang& a) {
+    cout << id << endl << a.nama;
+}
+void orang::setNama(string pNama) {
+    nama = pNama;
+}
+void siswa::setId(int pId) {
+    id = pId;
 }
