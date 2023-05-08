@@ -11,7 +11,7 @@ public:
 
 int main(){ 
     mahasiswa mhs{ 1 }; // object mhs 
-    mhs.showNim(); // Member accsess operator
+    mhs.showNim(); // Member accsess operator 
 
     mahasiswa& refMhs = mhs; // Pointer Refrence refMhs
     refMhs.nim = 2; // member access operator
